@@ -1,0 +1,32 @@
+<mat-sidenav-container>
+  <mat-sidenav #menuLateral>
+    <mat-nav-list>
+      <div *ngFor="let opcion of opciones">
+        <div [routerLink]="opcion.url" class="menu-button" (click)="menuLateral.toggle()">
+          <img [src]="opcion.icono">
+          {{ opcion.titulo }}
+        </div>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button mat-icon-button>
+        <mat-icon (click)="menuLateral.toggle()">
+          menu
+        </mat-icon>
+      </button>
+      <button mat-icon-button routerLink="inicio">
+        <mat-icon>
+          home
+        </mat-icon>
+      </button>
+      <img src="imagenes/th.jpeg" height="70px">
+      <div class="centrar">
+        Festivos En Colombia
+      </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

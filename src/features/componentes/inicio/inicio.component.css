@@ -1,0 +1,6 @@
+imagen {
+    width: 100%;
+    height: calc(100vh - 90px); /* Resta el alto de la toolbar (ajústalo si es necesario) */
+    object-fit: cover;
+    display: block;
+  }
