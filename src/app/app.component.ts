@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { ReferenciasMaterialModule } from '../shared/modules/referencias-material.module';
-import { NgFor } from '@angular/common';
+
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import { NgFor } from '@angular/common';
     RouterOutlet,
     RouterModule,
     ReferenciasMaterialModule,
-    NgFor
+   
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
